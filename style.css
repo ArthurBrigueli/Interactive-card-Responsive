@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: end;
+}
+
+.container{
+    background-color: white;
+    height: 100vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-input{
+    height: 35vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+input{
+    width: 24vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.497);
+    font-size: 1vw;
+    padding-left: 10px;
+    color: rgb(29, 0, 57);
+    font-weight: bold;
+}
+
+.container-back{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.container-date{
+    display: flex;
+    gap: 15px;
+}
+
+.container-date input{
+    width: 4vw;
+}
+
+
+.container-cvv input{
+    width: 12vw;
+}
+
+
+
+
+button{
+    width: 24.7vw;
+    height: 6vh;
+    border: none;
+    background-color: rgb(29, 0, 57);
+    color: white;
+    border-radius: 8px;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+
+.container-front-card{
+    position: absolute;
+    left: 12vw;
+    top: 19vh;
+    width: 25vw;
+}
+.container-back-card{
+    width: 25vw;
+    position: absolute;
+    left: 18vw;
+    top: 50vh;
+}
+
+img{
+    width: 100%;
+}
+
+
+.span-number-card{
+    position: absolute;
+    left: 7%;
+    top: 40%;
+    font-size: 2.5vw;
+    color: white;
+}
+.span-name-card{
+    position: absolute;
+    left: 6%;
+    top: 80%;
+    font-size: 1vw;
+    color: white;
+}
+
+.span-date-card-mes{
+    position: absolute;
+    left: 84%;
+    top: 80%;
+    font-size: 1vw;
+    color: white;
+}
+.span-date-card-ano{
+    position: absolute;
+    left: 89%;
+    top: 80%;
+    font-size: 1vw;
+    color: white;
+}
+
+.span-cvv-card{
+    position: absolute;
+    left: 80%;
+    top: 45%;
+    font-size: 1vw;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+.container-card{
+    width: 30vw;
+    height: 100vh;
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+
+.input-error{
+    border: 1px solid rgba(255, 0, 0, 0.497);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px){
+    body{
+        flex-direction: column;
+    }
+    .container-card{
+        width: 100vw;
+        height: 40vh;
+        
+    }
+    .container-front-card{
+        position: absolute;
+        left: 4vw;
+        top: 22vh;
+        width: 80vw;
+        z-index: 1;
+    }
+    .container-back-card{
+        position: absolute;
+        left: 16vw;
+        top: 5vh;
+        width: 80vw;
+        z-index: 0;
+    }
+    .span-number-card{
+        font-size: 8vw;
+        top: 45%;
+    }
+    .span-name-card{
+        font-size: 5vw;
+        top: 75%;
+        left: 7%;
+    }
+    .span-date-card-mes{
+        font-size: 4vw;
+        top: 75%;
+        left: 77%;
+    }
+    .span-date-card-ano{
+        font-size: 4vw;
+        top: 75%;
+        left: 85%;
+    }
+    .span-cvv-card{
+        font-size: 4vw;
+        top: 43%;
+        left: 80%;
+    }
+    /*Input */
+    .container{
+        width: 100vw;
+        height: 60vh;
+        
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+    }
+    
+    input{
+        width: 80vw;
+        height: 6vh;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid rgba(0, 0, 0, 0.305);
+        font-size: 3vw;
+        padding-left: 10px;
+        color: rgb(29, 0, 57);
+        
+    }
+    .container-back input{
+        display: flex;
+        gap: 30px;
+        width: 20.5vw;
+    }
+    button{
+        width: 83vw;
+        border-radius: 5px;
+        height: 8vh;
+        font-size: 5vw;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-card">
+        <div class="container-front-card">
+            <img class="img-card-front" src="images/bg-card-front.png" alt="">
+            <span class="span-number-card">0000 0000 0000 0000</span>
+            <span class="span-name-card">Name Card</span>
+            <span class="span-date-card-mes">00</span>
+            <span class="span-date-card-ano">00</span>
+        </div>
+        <div class="container-back-card">
+            <img class="img-card-back" src="images/bg-card-back.png" alt="">
+            <span class='span-cvv-card'>CVV</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-input">
+            <div class="input">
+                <input type="text" name="" id="card-name" placeholder="CARD NAME" required >
+                <input type="number" name="" id="card-number" placeholder="CARD NUMBER">
+                <div class="container-back">
+                    <div class="container-date">
+                        <input type="number" name="" id="dateMes" placeholder="MM">
+                        <input type="number" name="" id="dateAno" placeholder="YY">
+                    </div>
+                    <div class="container-cvv">
+                        <input type="number" name="" id="card-cvv" placeholder="CVV">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-botao">
+            <button class="botao">Confirm</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
